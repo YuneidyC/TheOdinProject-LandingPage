@@ -1,8 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    font-family: "Roboto", serif;
+}
+
+:root {
+    --white: white;
+    --dark-background: #1F2937;
+    --hero-text: #F9FAF8;
+    --blue: #3882F6;
+    --light-grey: #E5E7EB;
+    --font-weight: 900;
+    --sm: 18px;
+    --md: 24px;
+    --lg: 36px;
 }
 
 body {
-    background-color: #212121;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-background);
+    color: var(--hero-text);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 65px;
+}
+
+.hero-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.hero-top h2 {
+    font-size: var(--md);
+}
+
+.hero-top ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.hero-top ul li,
+.hero-bottom p {
+    font-size: var(--sm);
+    color: var(--light-grey);
+}
+
+.hero-top ul li {
+    text-align: end;
+}
+
+.hero-top ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.hero-bottom {
+    background-color: var(--dark-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 35px 0;
+}
+
+.hero-bottom-text {
+    width: 500px;
+    height: 248px;
+}
+
+.hero-bottom-text p {
+    padding-bottom: 10px;
+}
+
+.hero-bottom-text button {
+    background: var(--blue);
+    border: 1px solid transparent;
+    color: var(--white);
+    cursor: pointer;
+    padding: 8px 38px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero-bottom .hero-bottom-image {
+    width: 500px;
+    height: 248px;
+    background-color: #6d747d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--hero-text);
+    font-weight: var(--font-weight);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    padding: 40px 0 100px;
+    gap: 35px;
+}
+
+.info h2 {
+    font-size: var(--lg);
+    font-weight: var(--font-weight);
+}
+
+.info-img {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.info-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    gap: 5px;
+    height: 300px;
+}
+
+.info-img-container img {
+    width: 100%;
+    border: 4px var(--blue) solid;
+    border-radius: 15px;
+    height: 160px;
+}
+
+.info-img-container p {
+    margin-top: 5px;
+    text-align: center;
+    color: #6d747d;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grey);
+    padding: 120px 0;
+}
+
+.message h2 {
+    font-size: var(--lg);
+    font-style: italic;
+    font-weight: 300;
+}
+
+.message p {
+    font-size: var(--md);
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+
+.sign-up {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.sign-up-container {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 40px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sign-up-text {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.sign-up-text p:first-child {
+    font-size: var(--md);
+}
+
+.sign-up-text p:last-child {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.sign-up-container button {
+    border: 2px var(--white) solid;
+    background-color: var(--blue);
+    padding: 9px 49px;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: var(--sm);
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--dark-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    color: var(--white);
 }
