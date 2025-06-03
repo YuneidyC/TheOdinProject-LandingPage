@@ -24,9 +24,6 @@ This is the solution to the [Landing Page](https://www.theodinproject.com/lesson
     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" >
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Css3" width="40" height="40" />
     </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/javascript" >
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40" />
-    </a>
 </p>
 <!-- markdownlint-enable MD033 -->
 
